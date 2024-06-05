@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrimeraAppNetMaui.PrimeraPagina"
+             Title="PrimeraPagina">
+    <ScrollView>
+        <VerticalStackLayout>
+            
+            <HorizontalStackLayout VerticalOptions="Center"
+                               HorizontalOptions="Center">
+                    <Image  Source ="logoisp20.png"
+                            WidthRequest ="50"/>
+                    <Label FontSize="Large">Primera Aplicacion</Label>
+            </HorizontalStackLayout>
+    
+            <VerticalStackLayout>
+                <Label 
+                    Text="Carrera: Tecnico Superior en Desarrollo de Software"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" 
+                    FontSize="Medium"/>
+                <Label 
+                    Text="Curso:2do año"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" 
+                    FontSize="Medium"/>
+                <Label 
+                    Text="Catedra: Prácticas Profesionalizantes"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" 
+                    FontSize="Medium"/>
+                    
+            </VerticalStackLayout>
+            
+        </VerticalStackLayout>
+        
+    </ScrollView>
+</ContentPage>
