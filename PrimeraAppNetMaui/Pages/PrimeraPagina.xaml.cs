@@ -1,4 +1,4 @@
-namespace PrimeraAppNetMaui.Pages
+namespace PrimeraAppNetMaui.Pages;
 
 public partial class PrimeraPagina : ContentPage
 {

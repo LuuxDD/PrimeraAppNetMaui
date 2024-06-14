@@ -63,16 +63,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Platforms\Pages\Controles1Page.xaml.cs">
+	  <Compile Update="Pages\Controles1Page.xaml.cs">
 	    <DependentUpon>Controles1Page.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Platforms\Pages\Controles1Page.xaml">
+	  <MauiXaml Update="Pages\Controles1Page.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Platforms\Pages\PrimeraPagina.xaml">
+	  <MauiXaml Update="Pages\PrimeraPagina.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
