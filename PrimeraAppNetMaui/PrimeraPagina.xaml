@@ -26,6 +26,25 @@
                     VerticalOptions="Center" 
                     HorizontalOptions="Center"
                     FontSize="Medium" />
+                <Button Text="Saludo"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Margin="30"
+                        Clicked="Button_Clicked"
+                        />
+                <Button Text="Instituto"
+                        x:Name="btnInstituto"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Margin="30"
+                        Clicked="Button_Clicked"/>
+                <Button Text="Carrera"
+                        x:Name="btnCarrera"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Margin="30"
+                        Clicked="Button_Clicked"/>
+
             </VerticalStackLayout>
         </VerticalStackLayout>
     </ScrollView>
