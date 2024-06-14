@@ -15,26 +15,26 @@ namespace PrimeraAppNetMaui
         {
            
            Window nuestraApp = base.CreateWindow(activationState);
-            nuestraApp.Activated += SaludoDeBienvenida;
-            nuestraApp.Deactivated += MensajeAppCerrada;
-            nuestraApp.Resumed += MensajeRestaurada;
-            nuestraApp.Deactivated += MensajeAppSuspendida;
+            nuestraApp.Activated +=  SaludoDeBienvenida;
+            nuestraApp.Destroying += async(s,a) => await MensajeAppCerrada(s,a);
+            nuestraApp.Resumed += async (s, a) => await MensajeRestaurada (s,a);
+            nuestraApp.Deactivated += async (s, a) => await MensajeAppSuspendida(s, a);
             
             return nuestraApp;
 
         }
 
-        private void MensajeAppSuspendida(object? sender, EventArgs e)
+        private async Task MensajeAppSuspendida(object? sender, EventArgs e)
         {
             Debug.Print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Ha Salidode la App pero todavia sigue en memoria");
         }
 
-        private void MensajeRestaurada(object? sender, EventArgs e)
+        private async Task MensajeRestaurada(object? sender, EventArgs e)
         {
             Debug.Print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Ha vuelto a la App");
         }
 
-        private void MensajeAppCerrada(object? sender, EventArgs e)
+        private async Task MensajeAppCerrada(object? sender, EventArgs e)
         {
             Debug.Print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Esta cerrando la App");
         }
